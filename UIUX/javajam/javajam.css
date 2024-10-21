@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body{
     background-color: #fcebb6;
@@ -12,14 +15,17 @@ body{
 #wrapper {
     min-width: 900px;
     max-width: 1280px;
-    box-shadow: dropshadow;
-    background-color: #fefaeb;
+    box-shadow: 3px 3px 3px #676767;
+    background-color: #231814;
+    padding: 0px;
     margin-right: auto;
     margin-left: auto;
-    height: auto;
+    width: 80%;
 }
 
 nav{
+    float: left;
+    width: 200px;
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
@@ -30,11 +36,47 @@ nav a {
     text-decoration: none;
 }
 
+nav a:link {
+    color: #fef6c2;
+}
+
+nav a:visited {
+    color: #d2b48c;
+}
+
+nav a:hover {
+    color: #cc9933;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
 header {
+    background-image: url("images/coffeelogo.jpg");
+    background-repeat: no-repeat;
     background-color: #d2b48c;
-    color: #8c3826;
-    text-align: center;
-    padding: 5px 0px;
+    color: #231814;
+    padding-left: 240px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #231814;
+}
+
+header a:visited {
+    color: #231814;
+}
+
+header a:hover {
+    color: #fef6c2;
 }
 
 h1 {
@@ -45,25 +87,50 @@ h2 {
     color: #8c3826;
 }
 
-h4 {
-    background-color: #d2b48c;
-    font-size: 1.2em;
-    padding-left: .5em;
-    padding-bottom: .25em;
-}
-
 h3, dt {
     color: #8c3826;
 }
 
+h4 {
+    background-color: #d2b48c;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: solid 1px #221811;
+    clear: left;
+}
+
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.onethird {
+    float: left;
+    width: 33%;
+}
+
 main {
-    padding: 0 2em 2em 2em;
-    
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 200px;
+    padding-top: 0px;
+    background-color: #fef6c2;
+    overflow: auto;
+    display: block;
+}
+
+main h2, h3, h4, p, div, ul, dl {
+    padding-left: 3em;
+    padding-right: 2em;
 }
 
 .details {
     padding-left: 20%;
     padding-right: 20%;
+    overflow: auto;
 }
 
 img {
@@ -74,7 +141,19 @@ img {
 
 #homehero {
     background-image: url("images/hero.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+#heromugs {
+    background-image: url("images/heromugs.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+#heroguitar {
+    background-image: url("images/heroguitar.jpg");
+    background-size: 100% 100%;
     height: 300px;
 }
 
