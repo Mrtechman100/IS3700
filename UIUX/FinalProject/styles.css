@@ -23,7 +23,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 nav a:hover {
@@ -35,17 +35,23 @@ nav ul {
     list-style: none;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
 }
 
 nav ul li {
     display: none;
+    margin: 10px 0;
 }
 
 nav ul li.active {
     display: block;
     animation: scaleUp 0.5s ease-in-out forwards;
+}
+
+nav ul li.active a {
+    pointer-events: none;
+    cursor: default;
 }
 
 nav ul.show li {
@@ -63,3 +69,55 @@ nav ul.show li {
 
 
 /* Main Content */
+
+
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--navMenu);
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        color: white;
+        padding: 10px;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        background-color: #3D5F82;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul.show li {
+        display: block;
+    }
+
+    nav ul.show li a {
+        display: block;
+        font-size: 2em;
+    }
+
+    nav ul.show li a:hover {
+        background-color: #3D5F82;
+    }
+
+
+}
