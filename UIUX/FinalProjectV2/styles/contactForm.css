@@ -1,0 +1,84 @@
+/* Styles for the contact form */
+:root{
+    --bodybg: #CABB9D;
+    --hamburgerbg: #49656A;
+    --hamburgertxt: white;
+    --hamburgerhover: tomato;
+    --text: black;
+    --hr: #49656A;
+}
+
+.form {
+    width: 340px;
+    height: 440px;
+    background: var(--hamburgerbg);
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: var(--hamburgertxt);
+    border-bottom: 3px solid var(--hamburgerhover);
+}
+
+input {
+    color: var(--hamburgertxt);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid var(--hamburgerhover);
+  }
+
+input:focus {
+    border-bottom: 2px solid rgb(255, 169, 154);
+    color: whitesmoke;
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: var(--hamburgertxt);
+}
+
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: "Iceberg", sans-serif;
+    border: 2px solid tomato;
+    background: 0;
+    color: var(--hamburgertxt);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: tomato;
+    color: white;
+}
+
+.contact {
+    color: var(--hamburgertxt);
+
+    margin: 10px 0;
+    
+}
