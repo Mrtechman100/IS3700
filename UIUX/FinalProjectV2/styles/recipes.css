@@ -17,9 +17,11 @@
 h2 {
     padding: 5px;
     color: var(--hamburgertxt);
+    background-color: var(--hamburgerbg);
     text-shadow: 0 3px 3px var(--hamburgerbg);
-    border-bottom: solid 5px var(--hr);
+    /* border-bottom: solid 5px var(--hr); */
     box-shadow: 0 3px 3px var(--hamburgerbg);
+
 }
 
 img{
@@ -62,6 +64,9 @@ img{
 
 .modal-content h2 {
     text-align: center;
+    box-shadow: none;
+    border-bottom: solid 5px var(--hamburgerbg);
+    background-color: var(--bodybg);
 }
 
 /* Chocolate Chip Cookie Recipe */
